@@ -17,7 +17,8 @@ namespace :spec do
   end
 
   namespace :integration do
-    targets = ["ubuntu:trusty"]
+    #targets = ["ubuntu:trusty"]
+    targets = ["ubuntu:bionic"]
     container_name = 'itamae'
 
     task :all     => targets + ['spec:integration:local']
